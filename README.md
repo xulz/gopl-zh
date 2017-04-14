@@ -24,6 +24,13 @@ Go语言圣经 [《The Go Programming Language》](http://gopl.io) 中文版本�
 ### 从源文件构建
 
 先安装NodeJS和GitBook命令行工具(`npm install gitbook-cli -g`命令)。
+> 注: 最新版的Nodejs会报错"Cannot find module 'internal/fs'", 需要使用Node 6绕过该问题.
+>  安装方式如下:
+```bash
+npm install -g gulp
+npm install npm@4 -g
+nvm install 6.9.4
+```
 
 1. 运行`go get github.com/golang-china/gopl-zh`，获取 [源文件](https://github.com/golang-china/gopl-zh/archive/master.zip)。
 2. 切换到 `gopl-zh` 目录，运行 `gitbook install`，安装GitBook插件。
